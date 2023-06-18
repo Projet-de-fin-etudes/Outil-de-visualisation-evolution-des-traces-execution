@@ -49,8 +49,8 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add dist/myscript_linux
-        git commit -m "Add artifacts" || true
         git pull origin ${{ github.ref }}
+        git commit -m "Add artifacts" || true
       
     - name: push artifacts
       uses: ad-m/github-push-action@master
@@ -98,8 +98,8 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add dist/myscript_windows.exe
-        git commit -m "Add artifacts" || true
         git pull origin ${{ github.ref }}
+        git commit -m "Add artifacts" || true
     
     - name: push artifacts
       uses: ad-m/github-push-action@master
