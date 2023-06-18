@@ -4,8 +4,7 @@ on:
   push:
     branches: 
       - dev
-      - master
-      
+      - master  
 jobs:
   create-executable-linux:
     runs-on: ubuntu-latest
